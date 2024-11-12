@@ -1,0 +1,66 @@
+
+body {
+    background-color: #f0f9f0;
+}
+
+.navbar, .footer {
+    background-color: #2e7d32;
+}
+
+.navbar-brand, .navbar-nav .nav-link, .footer p {
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #f9a825;
+    border-color: #f9a825;
+}
+
+.btn-primary:hover {
+    background-color: #f57f17;
+    border-color: #f57f17;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2e7d32;
+}
+
+a {
+    color: #388e3c;
+}
+
+a:hover {
+    color: #1b5e20;
+}
+
+.form-control:focus {
+    border-color: #66bb6a;
+    box-shadow: 0 0 0 0.2rem rgba(102, 187, 106, 0.25);
+}
+
+
+.container {
+    margin-top: 20px;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+.event, .comment {
+    border-bottom: 1px solid #c8e6c9;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.comment {
+    margin-left: 20px;
+}
+
+.modal-header, .modal-footer {
+    background-color: #e8f5e9;
+}
+
+.modal-title {
+    color: #2e7d32;
+}
