@@ -1,66 +1,94 @@
-
 body {
-    background-color: #f0f9f0;
-}
-
-.navbar, .footer {
-    background-color: #2e7d32;
-}
-
-.navbar-brand, .navbar-nav .nav-link, .footer p {
-    color: #ffffff;
-}
-
-.btn-primary {
-    background-color: #f9a825;
-    border-color: #f9a825;
-}
-
-.btn-primary:hover {
-    background-color: #f57f17;
-    border-color: #f57f17;
+    background-color: #FFFFFF;
+    color: #1A1A1A;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #2e7d32;
+    color: #002060;
 }
 
 a {
-    color: #388e3c;
+    color: #002060;
+    text-decoration: underline;
 }
 
-a:hover {
-    color: #1b5e20;
+a:hover, a:focus {
+    color: #001040;
+    text-decoration: none;
 }
 
-.form-control:focus {
-    border-color: #66bb6a;
-    box-shadow: 0 0 0 0.2rem rgba(102, 187, 106, 0.25);
+.navbar {
+    background-color: #003366;
+}
+
+.navbar .nav-link {
+    color: #FFFFFF;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link:focus {
+    color: #CCCCCC;
+}
+
+.navbar-brand {
+    color: #FFFFFF;
+}
+
+.navbar-toggler {
+    border-color: #FFFFFF;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="%23FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
 }
 
 
-.container {
-    margin-top: 20px;
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+    outline: 3px solid #FFD700;
+    outline-offset: 2px;
 }
 
-footer {
-    padding: 20px 0;
+
+h1 {
+    font-size: 2rem;
 }
 
-.event, .comment {
-    border-bottom: 1px solid #c8e6c9;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
+h2 {
+    font-size: 1.75rem;
 }
 
-.comment {
-    margin-left: 20px;
+h3 {
+    font-size: 1.5rem;
 }
 
-.modal-header, .modal-footer {
-    background-color: #e8f5e9;
+.nav-link {
+    padding: 0.75rem 1rem;
 }
 
-.modal-title {
-    color: #2e7d32;
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#map {
+    height: 400px;
+}
+
+
+.leaflet-control-attribution {
+    background-color: #003366;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+}
+
+.leaflet-control-zoom a {
+    background-color: #003366;
+    color: #FFFFFF;
+}
+
+.leaflet-control-zoom a:hover {
+    background-color: #002244;
 }
