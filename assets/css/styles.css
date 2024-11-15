@@ -1,94 +1,185 @@
+/* Global body style */
 body {
-    background-color: #FFFFFF;
-    color: #1A1A1A;
-    font-size: 1rem;
-    line-height: 1.5;
+    background-color: #FFFFFF; /* White background */
+    color: #0A2E0A; /* Very dark green text */
+    font-size: 1rem; /* Default font size */
+    line-height: 1.5; /* Line height for readability */
 }
 
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
-    color: #002060;
+    color: #0A2E0A; /* Very dark green for headings */
 }
 
+/* Links */
 a {
-    color: #002060;
-    text-decoration: underline;
+    color: #0A2E0A; /* Very dark green for links */
+    text-decoration: underline; /* Underline links */
 }
 
 a:hover, a:focus {
-    color: #001040;
-    text-decoration: none;
+    color: #000000; /* Black on hover or focus */
+    text-decoration: none; /* Remove underline on hover or focus */
 }
 
+/* Navigation bar */
 .navbar {
-    background-color: #003366;
+    background-color: #18671C; /* Dark green background for navbar */
+}
+
+.navbar .navbar-brand {
+    color: #FFFFFF; /* White text for brand */
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: #A5D6A7; /* Light green on hover or focus */
 }
 
 .navbar .nav-link {
-    color: #FFFFFF;
+    color: #FFFFFF; /* White text for nav links */
 }
 
-.navbar .nav-link:hover, .navbar .nav-link:focus {
-    color: #CCCCCC;
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #A5D6A7; /* Light green on hover or focus */
+    background-color: #0A2E0A; /* Very dark green background on hover or focus */
 }
 
-.navbar-brand {
-    color: #FFFFFF;
-}
-
+/* Mobile navigation button */
 .navbar-toggler {
-    border-color: #FFFFFF;
+    border-color: #FFFFFF; /* White border for toggler */
 }
 
 .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="%23FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox%3D%220%200%2030%2030%22 xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath stroke%3D%22%23FFFFFF%22 stroke-width%3D%222%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 d%3D%22M4%207h22M4%2015h22M4%2023h22%22/%3E%3C/svg%3E'); /* White hamburger icon */
 }
 
+/* Footer */
+.footer {
+    background-color: #18671C; /* Dark green background for footer */
+    color: #FFFFFF; /* White text in footer */
+    padding: 1rem 0; /* Vertical padding for footer */
+}
 
+.footer a {
+    color: #FFFFFF; /* White text for footer links */
+}
+
+.footer a:hover,
+.footer a:focus {
+    color: #A5D6A7; /* Light green on hover or focus */
+    text-decoration: underline; /* Underline links on hover or focus */
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: #A5D6A7; /* Light green background for jumbotron */
+    color: #0A2E0A; /* Very dark green text for jumbotron */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #18671C; /* Dark green for primary buttons */
+    border-color: #0A2E0A; /* Very dark green border */
+    color: #FFFFFF; /* White text for buttons */
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #0A2E0A; /* Very dark green on hover or focus */
+    border-color: #0A2E0A; /* Very dark green border on hover or focus */
+    color: #FFFFFF; /* White text on hover or focus */
+}
+
+/* Bold text */
+strong {
+    color: #0A2E0A; /* Very dark green for bold text */
+    font-weight: bold; /* Ensure the text is bold */
+}
+
+/* Improve focus for keyboard users */
 a:focus, button:focus, input:focus, textarea:focus, select:focus {
-    outline: 3px solid #FFD700;
-    outline-offset: 2px;
+    outline: 3px solid #FFD700; /* Yellow outline for focus */
+    outline-offset: 2px; /* Offset the outline */
 }
 
-
+/* Adjust font sizes */
 h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Larger font size for h1 */
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 1.75rem; /* Slightly smaller for h2 */
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Smaller size for h3 */
 }
 
+/* Interactive elements */
 .nav-link {
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1rem; /* Add padding to nav links */
 }
 
-
+/* Styles for images */
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Ensure images scale responsively */
+    height: auto; /* Maintain aspect ratio of images */
 }
 
-
+/* Map container */
 #map {
-    height: 400px;
+    height: 500px; /* Set fixed height for the map */
 }
 
-
+/* Leaflet controls */
 .leaflet-control-attribution {
-    background-color: #003366;
-    color: #FFFFFF;
-    font-size: 0.9rem;
+    background-color: #18671C; /* Dark green background for attribution */
+    color: #FFFFFF; /* White text for attribution */
+    font-size: 0.9rem; /* Smaller font size */
 }
 
 .leaflet-control-zoom a {
-    background-color: #003366;
-    color: #FFFFFF;
+    background-color: #18671C; /* Dark green background for zoom controls */
+    color: #FFFFFF; /* White text for zoom controls */
 }
 
 .leaflet-control-zoom a:hover {
-    background-color: #002244;
+    background-color: #0A2E0A; /* Very dark green on hover */
+}
+
+/* Event cards */
+.card {
+    border: 1px solid #A5D6A7; /* Light green border for cards */
+    border-radius: 5px; /* Rounded corners for cards */
+}
+
+.card-title a {
+    color: #0A2E0A; /* Very dark green for card titles */
+}
+
+.card-title a:hover,
+.card-title a:focus {
+    color: #000000; /* Black on hover or focus */
+    text-decoration: none; /* Remove underline on hover or focus */
+}
+
+/* Buttons in cards */
+.card .btn {
+    background-color: #18671C; /* Dark green background for card buttons */
+    border-color: #0A2E0A; /* Very dark green border for card buttons */
+    color: #FFFFFF; /* White text for card buttons */
+}
+
+.card .btn:hover,
+.card .btn:focus {
+    background-color: #0A2E0A; /* Very dark green on hover or focus */
+    border-color: #0A2E0A; /* Very dark green border on hover or focus */
+}
+
+/* Event details */
+.event-details {
+    color: #0A2E0A; /* Very dark green for event details */
+    font-weight: bold; /* Bold text for event details */
 }
