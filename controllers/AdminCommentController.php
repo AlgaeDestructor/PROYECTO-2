@@ -1,4 +1,5 @@
 <?php
+// /controllers/AdminCommentController.php
 
 session_start();
 require_once '../config/config.php';
@@ -12,6 +13,7 @@ if (!isset($_SESSION['user']) || $_SESSION['user']['rol'] != 'admin') {
 $commentModel = new Comment($pdo);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Handle comment actions
     $comment_id = $_POST['comment_id'];
     $action = $_POST['action'];
 
@@ -25,6 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     header('Location: ../admin/comments_list.php');
     exit;
 } elseif ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['delete'])) {
+    // Delete comment
     $comment_id = $_GET['delete'];
     $commentModel->deleteComment($comment_id);
     header('Location: ../admin/comments_list.php');

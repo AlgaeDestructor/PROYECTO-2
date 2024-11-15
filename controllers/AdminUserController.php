@@ -1,5 +1,5 @@
 <?php
-
+// /controllers/AdminUserController.php
 
 session_start();
 require_once '../config/config.php';
@@ -13,7 +13,7 @@ if (!isset($_SESSION['user']) || $_SESSION['user']['rol'] != 'admin') {
 $userModel = new User($pdo);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
+    // Handle create or update user
     $data = [
         'nombre' => $_POST['nombre'],
         'apellidos' => $_POST['apellidos'],
@@ -23,11 +23,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     ];
 
     if (isset($_POST['user_id'])) {
-
+        // Update existing user
         $user_id = $_POST['user_id'];
         $userModel->updateUser($user_id, $data);
     } else {
-
+        // Create new user
         $password = $_POST['password'];
         $userModel->adminCreateUser($data, $password);
     }
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     header('Location: ../admin/users_list.php');
     exit;
 } elseif ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['delete'])) {
-
+    // Delete user
     $user_id = $_GET['delete'];
     $userModel->deleteUser($user_id);
     header('Location: ../admin/users_list.php');
